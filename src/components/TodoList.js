@@ -7,12 +7,12 @@ const TodoListBlock = styled.div`
     overflow-y: auto;
 `
 
-const TodoList = () => {
+const TodoList = ({ todos }) => {
     return (
         <TodoListBlock>
-            <TodoListItem />
-            <TodoListItem />
-            <TodoListItem />
+            {todos.map(todo => (
+                <TodoListItem todo={todo} key={todo.id} />
+            ))}
         </TodoListBlock>
     );
 };

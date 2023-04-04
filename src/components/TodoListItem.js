@@ -1,35 +1,31 @@
 import styled from "styled-components";
-import { MdOutlineRestoreFromTrash } from "react-icons/md";
+import { BiTrash } from "react-icons/bi";
+import { RiHeart3Line, RiHeart3Fill } from "react-icons/ri";
 
 const TodoListItemBlock = styled.div`
     padding: 1rem;
     display: flex;
     align-items: center;
-    &:nth-child(even) {
-        background: #f8f9fa;
-    }
+    justify-content: space-between;
     & + & {
         border-top: 1px solid #afb3b8;
     }
 `
-const CheckBox = styled.input`
+const CheckBox = styled.div`
         cursor: pointer;
-        flex: 1;
         display: flex;
         align-items: center;
         svg {
             font-size: 1.5rem;
+            color: pink;
         }
         .text {
-            margin-left: 1rem;
+            margin-left: 2rem;
             flex: 1;
         }
         &.checked {
-            svg {
-                color: #22b8cf 
-            }
             .text {
-                color: #adb5db;
+                color: #adb5bd;
                 text-decoration: line-through;
             }
         }
@@ -46,13 +42,16 @@ const Remove = styled.div`
     }
 `
 
-const TodoListItem = () => {
+
+const TodoListItem = ({todo}) => {
+    const {text, checked} = todo;
     return (
         <TodoListItemBlock>
-            <CheckBox type = 'checkbox' />
-            <Remove><MdOutlineRestoreFromTrash /></Remove>
+            <CheckBox>{checked ? <RiHeart3Fill/> : <RiHeart3Line/>}{text}</CheckBox>
+            <Remove><BiTrash /></Remove>
         </TodoListItemBlock>
     );
+
 };
 
 export default TodoListItem;

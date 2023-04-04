@@ -10,7 +10,7 @@ const TodoTemplateBlock = styled.div`
 ` 
 
 const AppTittle = styled.div`
-    background: #15f396;
+    background: pink;
     color: white;
     height: 4rem;
     font-size: 1.5rem;
@@ -19,7 +19,7 @@ const AppTittle = styled.div`
     justify-content: center;
 `
 const Content = styled.div`
-    background: white;
+    background: #ffe1e1;
 `
 
 const TodoTemplate = ({ children }) => {
