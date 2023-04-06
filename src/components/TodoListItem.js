@@ -21,11 +21,9 @@ const CheckBox = styled.div`
             font-size: 1.5rem;
             color: pink;
         }
-        &.checked {
-            .text {
+        & del { 
                 color: #adb5bd;
                 text-decoration: line-through;
-            } // 이거 적용 안되고 있음. 
         }
 `
 
@@ -54,8 +52,9 @@ const TodoListItem = ({todo, onRemove, onToggle, onChangeSelectedTodo, onInsertT
     const {id, text, checked} = todo;
     return (
         <TodoListItemBlock>
-            <CheckBox type='checked' onClick={() => onToggle(id)}>{checked ? <RiHeart3Fill/> : <RiHeart3Line/>}
-            {text}
+            <CheckBox onClick={() => onToggle(id)}>
+                {checked ? <RiHeart3Fill/> : <RiHeart3Line/>}
+                {checked ? <del>{text}</del> : <span>{text}</span>}
             </CheckBox>
             <Edit onClick={() => { 
             onChangeSelectedTodo(todo); 

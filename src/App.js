@@ -43,8 +43,8 @@ function App() {
       text,
       checked: false,
     };
-    setTodos((todos) => todos.concat(todo)); //concat(): 인자로 주어진 배열이나 값들을 기존 배열에 합쳐서 새 배열 반환
-    nextId.current++; //nextId 1씩 더하기
+    setTodos((todos) => todos.concat(todo)); 
+    nextId.current++; 
   }, []);
 
   const onRemove = useCallback((id) => {
