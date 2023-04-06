@@ -1,5 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background: #000000;
+  background: #c9daff;
+}
+
+@font-face {
+	font-family: "googlePacifico";
+	src: url(./fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+:root {
+	--font-googlePacifico: "googlePacifico";
 }

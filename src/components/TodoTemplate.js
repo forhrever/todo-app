@@ -12,11 +12,12 @@ const TodoTemplateBlock = styled.div`
 const AppTittle = styled.div`
     background: pink;
     color: white;
-    height: 4rem;
-    font-size: 1.5rem;
+    height: 6rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--font-googlePacifico);
 `
 const Content = styled.div`
     background: #ffe1e1;
