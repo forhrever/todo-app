@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/todo-app/static/css/main.009300d9.css",
+    "main.js": "/todo-app/static/js/main.3a9eeb46.js",
+    "static/media/rabit.png": "/todo-app/static/media/rabit.8f24cad9d151c69eec06.png",
+    "static/media/Pacifico-Regular.ttf": "/todo-app/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
+    "index.html": "/todo-app/index.html",
+    "main.009300d9.css.map": "/todo-app/static/css/main.009300d9.css.map",
+    "main.3a9eeb46.js.map": "/todo-app/static/js/main.3a9eeb46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.009300d9.css",
+    "static/js/main.3a9eeb46.js"
+  ]
+}
