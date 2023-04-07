@@ -5,6 +5,8 @@ Read : 생성된 투두 리스트가 뷰로 보여야 합니다.
 Update : 생성된 투두 리스트를 수정할 수 있어야 합니다.
 Delete : 생성된 투두 리스트를 삭제할 수 있어야 합니다.
 
+github.io 배포 : https://forhrever.github.io/todo-app/
+
 
 진행 사항 
 - Create: 생성 완료 
