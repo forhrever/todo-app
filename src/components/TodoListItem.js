@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { BiTrash } from "react-icons/bi";
-import { RiHeart3Line, RiHeart3Fill } from "react-icons/ri";
+import { BiBadge, BiBadgeCheck } from "react-icons/bi";
 import { FaPencilAlt } from "react-icons/fa";
 
 const TodoListItemBlock = styled.div`
@@ -19,7 +19,8 @@ const CheckBox = styled.div`
         align-items: center;
         svg {
             font-size: 1.5rem;
-            color: pink;
+            color: #ff94a6;
+
         }
         & del { 
                 color: #adb5bd;
@@ -53,7 +54,7 @@ const TodoListItem = ({todo, onRemove, onToggle, onChangeSelectedTodo, onInsertT
     return (
         <TodoListItemBlock>
             <CheckBox onClick={() => onToggle(id)}>
-                {checked ? <RiHeart3Fill/> : <RiHeart3Line/>}
+                {checked ? <BiBadgeCheck/> : <BiBadge/>}
                 {checked ? <del>{text}</del> : <span>{text}</span>}
             </CheckBox>
             <Edit onClick={() => { 

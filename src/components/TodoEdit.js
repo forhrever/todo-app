@@ -74,9 +74,9 @@ function ToDoEdit({ insertToggle, selectedTodo, onUpdate }) {
     return (
       <ToggleBackground>
         <TodoEdit onSubmit={onSubmit}>
-          <h2>수정하기</h2>
+          <h2>Edit</h2>
           <input onChange={onChange} value={value} placeholder="할 일을 입력하세요" />
-          <button type="submit">수정하기</button>
+          <button type="submit" onClick={onSubmit}>수정하기</button>
         </TodoEdit>
       </ToggleBackground>
     );

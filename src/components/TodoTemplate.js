@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { IoMdFlower } from "react-icons/io";
 
 const TodoTemplateBlock = styled.div`
     width: 512px;
@@ -26,7 +27,7 @@ const Content = styled.div`
 const TodoTemplate = ({ children }) => {
     return (
         <TodoTemplateBlock>
-            <AppTittle>To Do List</AppTittle>
+            <AppTittle><IoMdFlower/>To Do List<IoMdFlower/></AppTittle>
             <Content>{children}</Content>
         </TodoTemplateBlock>
     );
